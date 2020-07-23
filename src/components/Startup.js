@@ -10,7 +10,7 @@ class Startup extends Component {
           <StartupOptions />
         </div>
         <div className="col-md-8">
-          <StartupList />
+          <StartupList deleteStartup={this.props.deleteStartup}items={this.props.items}/>
         </div>
       </div>
     );

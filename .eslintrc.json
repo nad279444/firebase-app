@@ -1,4 +1,5 @@
-{
+{   
+    "parser": "babel-eslint",
     "env": {
         "browser": true,
         "es2020": true
@@ -10,14 +11,21 @@
     ],
     "parserOptions": {
         "ecmaFeatures": {
-            "jsx": true
+            "jsx": true,
+            "modules": true,
+            "experimentalObjectRestSpread": true
+
         },
-        "ecmaVersion": 11,
+        "ecmaVersion": 6,
         "sourceType": "module"
     },
     "plugins": [
         "react"
     ],
     "rules": {
+        "react/prop-types": 0
+       
     }
+    
+    
 }
