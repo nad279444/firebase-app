@@ -12,6 +12,7 @@ const Dashboard = ({ item, deleteStartup }) => {
     deleteStartup(item.id);
   };
   return (
+    <>
     <Container className="container">
       <Row className="row">
         <Col>
@@ -47,6 +48,8 @@ const Dashboard = ({ item, deleteStartup }) => {
         </Col>
       </Row>
     </Container>
+    <hr />
+    </>
   );
 };
 
